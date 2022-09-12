@@ -9,6 +9,7 @@ import {
 import InputButton from '../Components/InputButton';
 import InputLogin from '../Components/InputLogin';
 import SocialButton from '../Components/SocialButton';
+import {Context as AuthContext} from '../Context/AuthContext';
 
 const LoginScreen = () => {
   return (

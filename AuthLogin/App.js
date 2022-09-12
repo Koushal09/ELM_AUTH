@@ -8,7 +8,7 @@ import ProfileScreen from './src/Screens/ProfileScreen';
 // create a component
 const App = () => {
   return (
-    <ProfileScreen/>
+    <LoginScreen/>
   );
 };
 
