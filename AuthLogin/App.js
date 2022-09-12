@@ -1,12 +1,14 @@
 //import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import LoginScreen from './src/Screens/LoginScreen'
+import LoginScreen from './src/Screens/LoginScreen';
+import ProfileScreen from './src/Screens/ProfileScreen';
+
 
 // create a component
 const App = () => {
   return (
-    <LoginScreen/>
+    <ProfileScreen/>
   );
 };
 

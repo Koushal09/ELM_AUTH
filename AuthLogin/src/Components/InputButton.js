@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet,TouchableOpacity } from 'react-native';
 
 // create a component
-const InputButton = () => {
+const InputButton = (props) => {
     return (
         <TouchableOpacity style={styles.container}>
-            <Text style={{ color:'#fff' }} >InputButton</Text>
+            <Text style={{ color:'#fff' }} >{props.text}</Text>
         </TouchableOpacity>
     );
 };
