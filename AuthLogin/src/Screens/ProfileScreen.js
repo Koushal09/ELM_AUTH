@@ -1,22 +1,26 @@
 //import liraries
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 import { View, Text, StyleSheet,Image } from 'react-native';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import {Button} from 'react-native-elements';
+import { Context as AuthContext } from '../Context/AuthContext';
 
-// create a component
 const ProfileScreen = () => {
+    const {state,signout} = useContext(AuthContext);
     return (
         <View style={styles.container}>
            <Image style={{ width:60, height:60, resizeMode:'contain' }}
            source={require('../Assets/default.png')}
            />
            <Text>KOUSHAL BARICK</Text>
-           <Text>koushal@elearnmarkets.com</Text>
+           <Text>{state.email}</Text>
+
+           <Button onPress={signout} title="LOGOUT" type="clear" />
         </View>
     );
 };
 
-// define your styles
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -26,5 +30,5 @@ const styles = StyleSheet.create({
     },
 });
 
-//make this component available to the app
+
 export default ProfileScreen;
