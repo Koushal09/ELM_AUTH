@@ -5,7 +5,7 @@ import { View, Text, StyleSheet,TouchableOpacity } from 'react-native';
 // create a component
 const InputButton = (props) => {
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={props.onPress}>
             <Text style={{ color:'#fff' }} >{props.text}</Text>
         </TouchableOpacity>
     );
